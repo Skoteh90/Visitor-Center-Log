@@ -11,6 +11,8 @@ Web application that renders a 3D globe populated with pins highlighting hometow
 
 ### Usage
 
-Download/Clone and run http-server within powershell from root folder.
+- Download/Clone
+- npm install
+- run http-server within powershell from root folder.
 
 ![](images/setup.gif)
