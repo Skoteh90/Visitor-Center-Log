@@ -8,3 +8,9 @@ Web application that renders a 3D globe populated with pins highlighting hometow
 - All users and locations are saved to an external file available for data analysis.
 
 ![](images/preview.gif)
+
+### Usage
+
+Download/Clone and run http-server within powershell from root folder.
+
+![](images/setup.gif)
