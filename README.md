@@ -13,10 +13,11 @@ Web application that renders a 3D globe populated with pins highlighting hometow
 
 ### Usage
 
-- Download unzip and open root folder.
+- Download, unzip and open root folder.
 - Open powershell from within root folder.
-- run 'npm install'.
-- run 'http-server'.
+- Run 'npm install'.
+- Run 'http-server'.
+- Go to http://localhost:8080/ using internet browser.
 
 <p align="center">
   <img style="margin: auto;" src ="images/setup.gif" />
