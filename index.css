@@ -1,0 +1,208 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	background: #081f6a;
+	height: 100%;
+	/*background: radial-gradient(circle, #1976b5, #1976b5, #105aaa, #081f6a, #091b56, #0a1742, #0b1538);*/
+	/*background: radial-gradient(circle, #1976b5, #1976b5, #105aaa, #081f6a, #091b56);*/
+	overflow: hidden;
+}
+
+#globe{
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+}
+
+/* Drawer ---------------------------------------------------------------------------------------------------------- */
+.info-drawer {
+	/*Left side spanning full height*/
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+
+	max-width: 0px;
+
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+	background-color: white;
+	white-space: nowrap;
+    overflow: hidden;
+
+	transition: 1s;
+	z-index: 1;
+}
+
+.info-drawer-item {
+	display: flex;
+	padding: 0 30px;
+	margin-top: 16px;
+}
+
+.info-drawer-item p {
+	flex: 1;
+	text-align: right;
+}
+
+.info-drawer-title{
+	font-size: 20px;
+	padding-bottom: 10px;
+	margin: 20px 0 10px 0;
+	border-bottom: 1px solid #ccc;
+}
+/* Drawer ---------------------------------------------------------------------------------------------------------- */
+
+/* Login ----------------------------------------------------------------------------------------------------------- */
+.login-page {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+
+	background: none;
+}
+
+.search-results{
+	user-select: none;
+	position: absolute;
+	background-color: white;
+	top: calc(100% + 15px);
+	left: 0;
+	right: 0;
+}
+
+.search-results div:hover{
+	background-color: #eeeeee;
+}
+
+.search-results div{
+	display: flex;
+	flex-direction: row;
+	cursor: pointer;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: 0.25rem;
+
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #495057;
+
+	border: 1px solid #ced4da;
+}
+
+.search-results div div{
+	padding: 0;
+	margin: 0;
+	white-space: nowrap;
+	margin-right: 4px;
+	border: none;
+}
+
+.search-results div div:hover{
+	background-color: transparent;
+}
+
+
+.page {
+	width: 100%;
+	height: 100%;
+}
+
+#home_state{
+	width: 80px;
+	background-color: #FFFFFF;
+}
+
+.form-invalid {
+	color: #495057;
+	background-color: #fff;
+	border-color: #dc3545;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.77);
+}
+
+.form-fit{
+	display: flex;
+}
+
+.flex-row{
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+}
+
+.loader {
+	text-align: center;
+	vertical-align: top;
+	text-align: center;
+}
+.loader svg path, svg rect {
+	fill: #1976b5;
+}
+/* Login ----------------------------------------------------------------------------------------------------------- */
+
+/* Globe ----------------------------------------------------------------------------------------------------------- */
+.star {
+	fill: #105aaa;
+}
+
+.ocean {
+	fill: #1976b5;
+}
+
+.land {
+	fill: #6fcc50;
+}
+
+.drag-zone {
+	fill: transparent;
+	stroke: transparent;
+}
+
+.borders {
+	fill: none;
+	stroke: #fff;
+	stroke-width: 0.5px;
+}
+
+.graticule {
+	fill: none;
+	stroke: #fff;
+	stroke-width: 0.5px;
+}
+
+.pin {
+	cursor: pointer;
+	stroke: #fff;
+	stroke-width: 0.5px;
+	fill: red;
+}
+
+.pin:hover {
+	fill: #ffffff;
+}
+
+.pin_selected {
+	fill: blue;
+}
+
+
+.tooltip {
+	position: absolute;
+	padding: 10px;
+	background-color: #fff;
+	opacity: 0.9;
+	border-radius: 2px;
+	color: #000;
+	font-size: 12px;
+	font-family: sans-serif;
+}
+/* Globe ----------------------------------------------------------------------------------------------------------- */

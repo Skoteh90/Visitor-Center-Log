@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>Visitors Center Guest Log</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Visitors Center Guest Log">
+    <meta name="author" content="Scott Grambo">
+    <link rel="icon" href="images/google/baseline_public_black_18dp.png">
+
+    <link href="scripts/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="index.css" rel="stylesheet" />
+</head>
+
+
+
+<body class="page">
+    <div id="info" class="info-drawer">
+    </div>
+    <div id="globe"></div>
+
+    <div id="login" class="login-page">
+        <div class="container page d-flex">
+            <div class="mx-auto my-auto card">
+                <div class="card-body">
+                    <div class="mx-auto my-auto col-xs-12 col-sm-offset-2 col-md-offset-3">
+                        <form id="log_visit_form" role="form">
+                            <div class="form-group">
+                                <h2>Visitors Center <small>Guest Log</small></h2>
+                            </div>
+
+                            <!--<hr class="colorgraph">-->
+
+                            <div class="row form-group">
+                                <div>
+                                    <div>
+                                        <input type="text" name="name_first" id="name_first" class="form-control input-lg" placeholder="First Name" tabindex="1">
+                                    </div>
+                                </div>
+                                <div style="width:15px"></div>
+                                <div>
+                                    <div>
+                                        <input type="text" name="name_last" id="name_last" class="form-control input-lg" placeholder="Last Name" tabindex="2">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="home_country" id="home_country" class="form-control input-lg" placeholder="Home Country" tabindex="3">
+                            </div>
+                            <div class="flex-row form-group">
+                                <input type="text" name="home_town" id="home_town" class="form-control input-lg form-fit" placeholder="Home Town" tabindex="4">
+                                <div style="width:15px;"></div>
+                                <input disabled type="text" name="home_state" id="home_state" class="form-control input-lg form-fit" tabindex="4">
+                            </div>
+
+                            <!--<hr class="colorgraph">-->
+
+                                <div class="">
+                                    <div class="float-left loader loader--style2" title="1">
+                                        <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                             width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50; display: none;" xml:space="preserve">
+                                            <path fill="#000" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z">
+                                            <animateTransform attributeType="xml"
+                                              attributeName="transform"
+                                              type="rotate"
+                                              from="0 25 25"
+                                              to="360 25 25"
+                                              dur="0.6s"
+                                              repeatCount="indefinite"/>
+                                            </path>
+                                        </svg>
+                                    </div>
+                                    <div class="float-right">
+                                        <div onclick="logVisit()" class="btn btn-success btn-block btn-lg float-right">Log Visit</div>
+                                    </div>
+                                </div>
+
+                            <div id="search_results" class="mx-auto my-auto card card-body search-results">
+
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Never did add these. The functions are there but buttons visuals are not-->
+    <!--<div id="button-save" class="login-page">-->
+
+    <!--esc is used to bring back the new visitor page atm-->
+    <!--<div id="button-new-visitor" class="login-page">-->
+    </div>
+
+    <script src="scripts/jQuery/jquery-3.3.1.min.js"></script>
+
+    <script src="scripts/d3/d3.min.js"></script>
+    <script src="scripts/d3/d3-queue.v3.min.js"></script>
+    <script src="scripts/topojson/topojson.min.js"></script> <!-- Used to import svg of globe -->
+
+    <script src="data/countries.js"></script>
+    <script src="scripts/threadWorker.js"></script>
+    <script src="scripts/saving.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
