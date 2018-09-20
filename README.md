@@ -5,7 +5,7 @@ Web application that renders a 3D globe populated with pins highlighting hometow
 - When location is confirmed a pin at the correct latitude and longitude is added to the globe.
 - Information about the location and who added it is available by clicking on the pin.
 - Geolocation was accomplished with an offline database of locations to remove the need of a dedicated internet connection.
-- All users and locations are saved to an external file available for data analysis.
+- All users and locations can be saved to an external file available for data analysis.
 
 <p align="center">
   <img style="margin: auto;" src ="images/preview.gif" />
@@ -13,9 +13,10 @@ Web application that renders a 3D globe populated with pins highlighting hometow
 
 ### Usage
 
-- Download/Clone
-- npm install
-- run http-server within powershell from root folder.
+- Download unzip and open root folder.
+- Open powershell from within root folder.
+- run 'npm install'.
+- run 'http-server'.
 
 <p align="center">
   <img style="margin: auto;" src ="images/setup.gif" />
