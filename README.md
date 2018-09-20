@@ -7,7 +7,7 @@ Web application that renders a 3D globe populated with pins highlighting hometow
 - Geolocation was accomplished with an offline database of locations to remove the need of a dedicated internet connection.
 - All users and locations are saved to an external file available for data analysis.
 
-<div style="text-align:center"><img src ="images/preview.gif" /></div>
+<div style="display: flex;"><img style="margin: auto;" src ="images/preview.gif" /></div>
 
 ### Usage
 
