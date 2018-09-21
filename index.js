@@ -213,7 +213,7 @@ function updateEarth () {
     }
 
     d3.queue()
-    .defer(d3.json, "scripts/d3/world-110m.v1.json")
+    .defer(d3.json, "data/world-110m.v1.json")
     .await(renderEarth);
 
     function renderEarth(error, world) {
