@@ -1,5 +1,5 @@
 # Visitor-Center-Log
-Web application that renders a 3D globe populated with pins highlighting hometowns of visitors whom visit the visitor's center.
+Web application that renders a 3D globe populated with pins highlighting hometowns of visitors whom visit the visitor's center. This is jsut a prototype thrown together real quick as a proof of concept for a project bid, so it's a little messy.
 
 - User types in the name of a location and the app auto completes possible locations.
 - When location is confirmed a pin at the correct latitude and longitude is added to the globe.
